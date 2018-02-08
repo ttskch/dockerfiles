@@ -16,3 +16,5 @@ RUN apt-get update \
 RUN apt-get install -y imagemagick libmagickwand-dev libmagickcore-dev \
     && pecl install imagick \
     && docker-php-ext-enable imagick
+
+COPY php.ini /usr/local/etc/php/
