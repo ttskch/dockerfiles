@@ -1,3 +1,3 @@
-FROM ttskch/nginx
+FROM ttskch/nginx-for-php
 
-COPY default.conf /etc/nginx/conf.d/
+COPY default.conf $NGINX_CONFD_DIR/
