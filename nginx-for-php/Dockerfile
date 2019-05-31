@@ -20,4 +20,4 @@ COPY default.conf $NGINX_CONFD_DIR/
 
 EXPOSE 80
 
-CMD ["nginx", "-g", "nodaemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
