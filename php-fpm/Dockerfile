@@ -6,6 +6,8 @@ RUN apt-get update \
     \
     && docker-php-ext-install -j$(nproc) opcache \
     \
+    && docker-php-ext-install -j$(nproc) mysqli \
+    \
     && pecl install apcu \
     && docker-php-ext-enable apcu
 
